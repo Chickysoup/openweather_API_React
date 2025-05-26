@@ -9,8 +9,10 @@ const API_KEY =  import.meta.env.VITE_OPENWEATHER_API_KEY
 //async function
 export const getWeatherByCity = async (cityName: string): Promise<WeatherData> => {
 
+
     //constructs API URL with params
     const url = `${BASEURL}?q=${cityName}&appid=${API_KEY}&units=metric`
+
 
     //checks for successful response
     try {
